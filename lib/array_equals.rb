@@ -11,12 +11,10 @@ def array_equals(array1, array2)
     return false
   else
     length = array1.length
-    index = 0
-    length.times do |number|
-      if array1[index] != array2[index]
+    length.times do |i|
+      if array1[i] != array2[i]
         return false
       end
-      index += 1
     end
   end
   return true
